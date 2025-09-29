@@ -6,7 +6,7 @@
 
 TEST_CASE("Default constructor creates empty vector") {
     dsa::Vector<int> v;
-    bool ok{true};
-    REQUIRE(ok);
+    bool empty = v.empty();
+    REQUIRE(empty);
 }
 

@@ -14,12 +14,8 @@ private:
 
 public:
     //empty
-    Vector() {
-        int cap = 0;
-        int sz = 0;
-        T* data = nullptr;
-    };
-    
+    Vector() = default;    
+
     //capacity
     int capacity() const {
         return cap;
@@ -121,7 +117,7 @@ public:
             for (int k = 0; k < sz; k++) {
                 new_array[k] = data[k];
             }
-            delete data;
+            delete[] data;
             data = new_array;
             cap = minimum;
         }
@@ -135,7 +131,7 @@ public:
         for (int k = 0; k < sz; k++) {
             temp[k] = data[k];
         }
-        delete data;
+        delete[] data;
         data = temp;
         cap = new_cap;
     }

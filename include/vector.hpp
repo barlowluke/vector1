@@ -127,7 +127,7 @@ public:
         if (new_cap == cap) {
             return;
         }
-        T* temp = new T*[new_cap];
+        T* temp = new T[new_cap];
         for (int k = 0; k < sz; k++) {
             temp[k] = data[k];
         }

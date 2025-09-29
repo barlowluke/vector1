@@ -85,7 +85,7 @@ public:
     void pop_back() {
       // no validation to check the size, pop_back should be called when 
       // size >= 1
-      sz = sz -= 1;
+      sz -= 1;
       shrink();
     }
 

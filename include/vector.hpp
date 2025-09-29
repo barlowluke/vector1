@@ -98,7 +98,7 @@ public:
             data[k+1] = data[k];
         }
         data[i] = elem;
-        sz = sz += 1;
+        sz += 1;
     }
 
     // removes at index
@@ -106,7 +106,7 @@ public:
         for (int k = i + 1; k < sz; k++) {
             data[k - 1] = data[k];
         }
-        sz = sz -= 1;
+        sz -= 1;
         shrink();
     }
 
